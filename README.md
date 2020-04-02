@@ -94,6 +94,8 @@ Make sure you place the private subnets in ***two different availability zones**
 6. **Subnet Group**
    - Creates Subnet Group with Two Private Subnets
 
+![infractructure create preview](https://github.com/dinoradulovic/infrastructure-scripts-aws-cli/blob/media/infrastructure-create.png)
+
 ### ./instances-create.sh 
 
 This script creates the EC2 instance and RDS instance inside previously created network infrastructure.
@@ -103,6 +105,8 @@ It also creates two security groups and adds inbound rules to them.
 First security group is assigned to EC2 instance where the App Server will be deployed. It opens up a port 80 for everyone and port 22 for your local IP address.  
 
 Second security group is assigned to RDS instance where the Database is created. It opens up port 5432 (PostgreSQL) for EC2 instance only. App Server can access the data from the database and this EC2 instance also serves as a bastion host.
+
+![instances create preview](https://github.com/dinoradulovic/infrastructure-scripts-aws-cli/blob/media/instances-create.png)
 
 ## Reverting Infrastructure
 
