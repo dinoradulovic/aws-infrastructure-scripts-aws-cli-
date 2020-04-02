@@ -118,9 +118,15 @@ This script will terminate/delete EC2 instance and RDS instance.
 
 Before proceeding to the next script, wait until the RDS instance is fully deleted (you can check in the console), because it won't let you delete the security group associated with RDS instance while deletion is in progress.
 
+![instances terminate preview](https://github.com/dinoradulovic/infrastructure-scripts-aws-cli/blob/media/instances-terminate.png)
+
 ### ./security-groups-delete.sh 
 
 Deletes two security groups associated with the EC2 and RDS instance. 
 
+![security groups delete preview](https://github.com/dinoradulovic/infrastructure-scripts-aws-cli/blob/media/security-groups-delete.png)
+
 ### ./infrastructure-teardown.sh 
 Deletes the rest of the infrastructure.
+
+![infrastructure teardown preview](https://github.com/dinoradulovic/infrastructure-scripts-aws-cli/blob/media/infrastructure-teardown.png)
