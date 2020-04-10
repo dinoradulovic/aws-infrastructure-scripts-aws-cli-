@@ -4,6 +4,8 @@ This repo contains a collection of scripts to create the network infrastructure 
 
 It creates a ***VPC*** with ***Public Subnet*** and ***two Private Subnets***. 
 
+![aws architecture](https://github.com/dinoradulovic/infrastructure-scripts-aws-cli/blob/media/aws-architecture.png)
+
 EC2 Instance is created inside the Public Subnet for the App Server to be deployed into. 
 > It also runs the User data shell script that installs Node, PM2, Nginx and configures Nginx as a Reverse Proxy to pass the requests from port :80 to port :3000 where the App Server will be run.
 
