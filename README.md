@@ -1,6 +1,9 @@
 # AWS Backend APIs Infrastructure Scripts (AWS CLI)
 
-This repo contains a collection of scripts to create the network infrastructure on AWS for deploying Backend APIs.
+This repo contains a collection of scripts to create the network infrastructure on AWS for deploying Backend APIs.  
+To see the same AWS Infrastructure setup using AWS Cloudformation visit:  
+https://github.com/dinoradulovic/infrastructure-cloudformation
+
 
 It creates a ***VPC*** with ***Public Subnet*** and ***two Private Subnets***. 
 
